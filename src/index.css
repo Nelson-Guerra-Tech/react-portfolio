@@ -2,8 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&family=Roboto:wght@100;300;400&display=swap');
 
 /* global colors */
+
 .root {
-  --ivory-white: #fbfff1;
+  --poppins: 'Poppins', sans-serif;
+  --smokey-black: #0c0e07;
+  --corn-silk: #fefae0;
+  --accent: #0097d7;
+  --off-white: #f1f5f8;
+  --ghost-white: #fbfbfb;
+  --blue-accent: #00b8ce;
 }
 
 * {
@@ -15,16 +22,8 @@
 /* body styling */
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background: var(--ivory-white);
-}
-
-/* main container */
-.container {
-  max-width: 768px;
-  background: #3066be;
-  margin: auto;
-  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+  background: #f1f5f8;
 }
 
 header {
@@ -34,4 +33,113 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+}
+
+/* main container */
+.main-container {
+  max-width: 768px;
+  /* background: white; */
+  margin: auto;
+  padding: 0 20px;
+  color: #0c0e07;
+}
+
+.heading-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50%;
+  margin-bottom: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* background-color: #0097d7; */
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 0 0rem;
+  color: #0c0e07;
+}
+
+.heading-name {
+  color: #0097d7;
+}
+
+.waving-hand {
+  height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.main-container p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.globe {
+  height: 1.5rem;
+  margin: 0rem 0.5rem;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0097d7;
+  color: #f1f5f8;
+  font-size: 1rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #005f87;
+}
+
+.btn:active {
+  transform: translateY(2px);
 }
