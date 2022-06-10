@@ -1,7 +1,11 @@
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route, Routes } from 'react-router-dom';
 
 // importing components
 import Header from './components/Header.jsx';
+import ProjectsPage from './components/ProjectsPage.jsx';
+import AboutPage from './components/AboutPage.jsx';
+import Footer from './components/Footer.jsx';
 
 // importing css
 import './index.css';
@@ -35,18 +39,19 @@ function App() {
             ></img>
             Hello, I'm <span className='heading-name'> Nelson</span>!
           </h1>
-          <p data-aos='zoom-in' data-aos-delay='500'>
-            A <span className='heading-name'>Software Developer </span>with a
-            Bachelor's in Information Technolgy, based out of Georgia
-            <img className='globe' src={globe} alt='globe'></img>
-            <span className='heading-name'>I design & develop</span> cool things
-            for the web.
-          </p>
-          <button className='btn' data-aos='zoom-in' data-aos-delay='1000'>
-            View Projects
-          </button>
+          <div className='title-info' data-aos='zoom-in' data-aos-delay='500'>
+            <p>
+              A <span className='heading-name'>Software Developer </span>with a
+              Bachelors in Information Technology, based out of Georgia
+              <img className='globe' src={globe} alt='globe'></img>
+              <span className='heading-name'>I design & develop</span> cool
+              things for the web
+            </p>
+            <button className='btn'>View Projects</button>
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
