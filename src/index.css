@@ -19,23 +19,18 @@
   padding: 0;
 }
 
-.App {
-  min-height: 100vh;
-}
-
 /* body styling */
 body {
   font-family: 'Poppins', sans-serif;
   background: #f1f5f8;
 }
 
-header {
-  height: 70px;
-  width: 100%;
+.home-container {
+  height: 85vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin: auto;
 }
 
 /* main container */
@@ -54,13 +49,6 @@ header {
   align-items: center;
   flex-direction: column;
   /* absolute centering */
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   margin: auto;
 }
 
@@ -189,6 +177,6 @@ img {
   }
 
   .main-container p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }

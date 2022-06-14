@@ -1,10 +1,8 @@
 // custom css
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 // importing aos & useEffect
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCode,
@@ -19,12 +17,6 @@ import {
 import myLogo from '../images/Asset 1.svg';
 
 export default function Header() {
-  // initializing AOS
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-    AOS.refresh();
-  }, []);
-
   // font awesome
   const houseIcon = <FontAwesomeIcon className='icon' icon={faHouse} />;
   const codeIcon = <FontAwesomeIcon className='icon' icon={faCode} />;
@@ -32,21 +24,42 @@ export default function Header() {
   const mailIcon = <FontAwesomeIcon className='icon' icon={faEnvelope} />;
 
   return (
-    <div className='header-container' data-aos='fade-down' data-aos-delay='500'>
+    <nav className='header-container' data-aos='fade-down' data-aos-delay='500'>
       <div className='logo-container'>
-        <img className='myLogo' src={myLogo} alt='nelson-logo' />
+        <Link to={'/'}>
+          <img className='myLogo' src={myLogo} alt='nelson-logo' />
+        </Link>
       </div>
 
       <div className='header-links'>
-        {houseIcon}
-        <a href='/'>Home</a>
-        {codeIcon}
-        <a href='/'>Projects</a>
-        {userIcon}
-        <a href='/'>About</a>
-        {mailIcon}
-        <a href='/'>Contact</a>
+        <Link to='/' className='icon'>
+          {houseIcon}
+        </Link>
+        <Link to='/' className='links'>
+          Home
+        </Link>
+
+        <Link to='/projects' className='icon'>
+          {codeIcon}
+        </Link>
+        <Link to={'/projects'} className='links'>
+          Projects
+        </Link>
+
+        <Link to='/about' className='icon'>
+          {userIcon}
+        </Link>
+        <Link to={'/about'} className='links'>
+          About
+        </Link>
+
+        <Link to='/contact' className='icon'>
+          {mailIcon}
+        </Link>
+        <Link to={'/contact'} className='links'>
+          Contact
+        </Link>
       </div>
-    </div>
+    </nav>
   );
 }

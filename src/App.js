@@ -1,23 +1,19 @@
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Switch, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Switch } from 'react-router-dom';
+import React, { useEffect } from 'react';
 
 // importing components
-import Header from './components/Header.jsx';
-import ProjectsPage from './components/ProjectsPage.jsx';
-import AboutPage from './components/AboutPage.jsx';
-import Footer from './components/Footer.jsx';
+import Header from './components/Header';
+import Home from './pages/Home';
+import ProjectsPage from './pages/ProjectsPage';
+import AboutPage from './pages/AboutPage';
+import Footer from './components/Footer';
 
 // importing css
 import './index.css';
 
-// importing aos & useEffect
-import React, { useEffect } from 'react';
+// importing aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-// importing svgs
-import wavingHand from './images/waving-hand.png';
-import globe from './images/globe.png';
 
 function App() {
   // initializing AOS
@@ -27,32 +23,15 @@ function App() {
   }, []);
 
   return (
-    <div className='App'>
+    <BrowserRouter>
       <Header />
-      <div className='main-container'>
-        <div className='heading-container'>
-          <h1 data-aos='zoom-in'>
-            <img
-              className='waving-hand wave'
-              src={wavingHand}
-              alt='waving-hand'
-            ></img>
-            Hello, I'm <span className='heading-name'> Nelson</span>!
-          </h1>
-          <div className='title-info' data-aos='zoom-in' data-aos-delay='500'>
-            <p>
-              A <span className='heading-name'>Software Developer </span>with a
-              Bachelors in Information Technology, based out of Georgia
-              <img className='globe' src={globe} alt='globe'></img>
-              <span className='heading-name'>I design & develop</span> cool
-              things for the web
-            </p>
-            <button className='btn'>View Projects</button>
-          </div>
-        </div>
-      </div>
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route path='/projects' element={<ProjectsPage />} />
+        <Route path='/about' element={<AboutPage />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

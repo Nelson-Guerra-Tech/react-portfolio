@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   position: absolute;
-  background-color: white;
+  background-color: rgb(30, 30, 30);
   bottom: 0;
 }
 
@@ -16,14 +17,31 @@
   max-width: 865px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1.5rem;
+  padding-top: 1rem;
 }
 
 .footer-content p {
-  padding: 0 5px;
-  color: #0c0e07c6;
+  padding: 2.5rem 0.3rem;
+  color: whitesmoke;
   letter-spacing: 2px;
   font-size: 0.8rem;
+}
+
+.social-container {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  top: 1.2rem;
+}
+
+.git-icon {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+.linked-icon {
+  color: whitesmoke;
+  font-size: 1.5rem;
 }
 
 .heart-icon {
@@ -44,8 +62,8 @@
 }
 
 .react-icon {
-  height: 1.5rem;
-  color: #0097d7;
+  font-size: 1.5rem;
+  color: #61dbfb;
 }
 
 .rotate {
