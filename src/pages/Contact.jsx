@@ -1,11 +1,13 @@
-// importing css
-import './AboutPage.css';
+import React from 'react';
 
-export default function AboutPage() {
+// importing css
+import './Contact.css';
+
+export default function Contact() {
   return (
     <section>
       <h2 className='section-heading' data-aos='fade-down'>
-        🧔🏻‍♂️ About
+        📬 Contact
       </h2>
 
       <div className='projects-section'></div>

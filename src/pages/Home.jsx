@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 // importing svgs
 import wavingHand from '../images/waving-hand.png';

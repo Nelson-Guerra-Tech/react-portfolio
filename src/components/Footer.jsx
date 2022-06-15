@@ -16,16 +16,16 @@ export default function Footer() {
           href='https://www.linkedin.com/in/nelson-guerra-7075b413a/'
           target='_blank'
         >
-          <FaLinkedin className='linked-icon' />
+          <FaLinkedin className='linked-icon fa-icon' />
         </a>
         <a href='https://github.com/Nelson-Guerra-Tech' target='_blank'>
-          <FaGithubSquare className='git-icon' />
+          <FaGithubSquare className='git-icon fa-icon' />
         </a>
         <a href='https://codepen.io/your-work/' target='_blank'>
-          <FaCodepen className='linked-icon' />
+          <FaCodepen className='linked-icon fa-icon' />
         </a>
         <a href='https://www.instagram.com/bearded_nelly/' target='_blank'>
-          <FaInstagramSquare className='linked-icon' />
+          <FaInstagramSquare className='linked-icon fa-icon' />
         </a>
       </div>
       <div className='footer-content'>

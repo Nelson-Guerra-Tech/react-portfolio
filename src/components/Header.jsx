@@ -2,14 +2,8 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
 
-// importing aos & useEffect
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faCode,
-  faHouse,
-  faCircleUser,
-  faEnvelope,
-} from '@fortawesome/free-solid-svg-icons';
+// importing react icons
+import { FaHome, FaCode, FaUser, FaEnvelope } from 'react-icons/fa';
 
 // import react links
 
@@ -17,12 +11,6 @@ import {
 import myLogo from '../images/Asset 1.svg';
 
 export default function Header() {
-  // font awesome
-  const houseIcon = <FontAwesomeIcon className='icon' icon={faHouse} />;
-  const codeIcon = <FontAwesomeIcon className='icon' icon={faCode} />;
-  const userIcon = <FontAwesomeIcon className='icon' icon={faCircleUser} />;
-  const mailIcon = <FontAwesomeIcon className='icon' icon={faEnvelope} />;
-
   return (
     <nav className='header-container' data-aos='fade-down' data-aos-delay='500'>
       <div className='logo-container'>
@@ -33,28 +21,28 @@ export default function Header() {
 
       <div className='header-links'>
         <Link to='/' className='icon'>
-          {houseIcon}
+          <FaHome />
         </Link>
         <Link to='/' className='links'>
           Home
         </Link>
 
         <Link to='/projects' className='icon'>
-          {codeIcon}
+          <FaCode />
         </Link>
         <Link to={'/projects'} className='links'>
           Projects
         </Link>
 
         <Link to='/about' className='icon'>
-          {userIcon}
+          <FaUser />
         </Link>
         <Link to={'/about'} className='links'>
           About
         </Link>
 
         <Link to='/contact' className='icon'>
-          {mailIcon}
+          <FaEnvelope />
         </Link>
         <Link to={'/contact'} className='links'>
           Contact

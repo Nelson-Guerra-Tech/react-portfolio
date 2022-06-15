@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
 // importing css
@@ -29,6 +30,7 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route path='/projects' element={<ProjectsPage />} />
         <Route path='/about' element={<AboutPage />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>

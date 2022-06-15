@@ -29,19 +29,19 @@
 
 .social-container {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   position: absolute;
   top: 1.2rem;
 }
 
-.git-icon {
+.fa-icon {
   color: whitesmoke;
   font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
 }
 
-.linked-icon {
-  color: whitesmoke;
-  font-size: 1.5rem;
+.fa-icon:hover {
+  font-size: 1.8rem;
 }
 
 .heart-icon {

@@ -6,7 +6,6 @@
   height: 4rem;
   max-width: 865px;
   margin: auto;
-  z-index: 99;
 }
 
 .header-div {
@@ -15,36 +14,39 @@
 
 .myLogo {
   height: 2rem;
-  margin: 1rem;
+  margin-left: 1.5rem;
 }
 
 .header-container .header-links {
   padding: 0 10px;
+  display: flex;
 }
 
 .header-links .links {
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0 1rem 0rem 0rem;
   text-decoration: none;
   color: #0c0e07b4;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   letter-spacing: 2px;
+  vertical-align: middle;
 }
 
-.header-links .icon {
-  height: 1rem;
-  padding-right: 0.3rem;
+.icon {
+  font-size: 1.2rem;
+  padding-right: 0.4rem;
   color: #0c0e07b4;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  vertical-align: middle;
 }
 
-.header-links .icon:hover {
+.icon:hover {
   height: 1.2;
 }
 
-.header-links .links:hover {
+.links:hover {
   font-size: 1.2;
 }
 
@@ -59,7 +61,23 @@
   }
 
   .icon {
-    padding-right: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .myLogo {
+    height: 2rem;
+  }
+}
+
+/* media queries */
+@media screen and (max-width: 420px) {
+  .header-links .links {
+    display: none;
+  }
+
+  .icon {
+    font-size: 1.5rem;
   }
 
   .myLogo {
