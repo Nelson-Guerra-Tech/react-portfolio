@@ -3,10 +3,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  position: absolute;
-  background-color: rgb(30, 30, 30);
+  position: fixed;
   bottom: 0;
+  width: 100%;
+  background-color: rgb(30, 30, 30);
 }
 
 .footer-content {
@@ -21,7 +21,7 @@
 }
 
 .footer-content p {
-  padding: 2.5rem 0.3rem;
+  padding: 2rem 0.3rem;
   color: whitesmoke;
   letter-spacing: 2px;
   font-size: 0.8rem;
@@ -46,19 +46,6 @@
 
 .heart-icon {
   color: #fe0000;
-}
-
-.heart {
-  animation: heartbeat 2s infinite;
-}
-
-@keyframes heartbeat {
-  0% {
-    transform: scale(1);
-  }
-  20% {
-    transform: scale(1.25) translateX(5%) translateY(5%);
-  }
 }
 
 .react-icon {

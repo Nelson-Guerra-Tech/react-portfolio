@@ -1,3 +1,10 @@
+.project-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .section-heading {
   text-align: center;
   font-size: 2rem;

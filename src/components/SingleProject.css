@@ -1,0 +1,67 @@
+.single-project {
+  max-width: 768px;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+.single-project h2 {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  gap: 0.2rem;
+}
+
+.title {
+  text-decoration: none;
+  color: #0097d7;
+}
+
+.single-project-content {
+  margin: 1rem 1rem;
+  padding: 1rem 2rem;
+  max-width: 768px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.live-button,
+.github-button {
+  margin-top: 0.5rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0097d7;
+  color: #f1f5f8;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.live-button:hover,
+.github-button:hover {
+  background-color: #f1f5f8;
+  color: #0c0e07;
+}
+
+.live-button:active,
+.github-button:active {
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 1rem;
+  }
+
+  .single-project-content p {
+    font-size: 1rem;
+  }
+}

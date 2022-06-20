@@ -20,9 +20,11 @@
 }
 
 /* body styling */
+html,
 body {
   font-family: 'Poppins', sans-serif;
   background: #f1f5f8;
+  height: 100%;
 }
 
 .home-container {
@@ -136,12 +138,13 @@ img {
   background-color: #0097d7;
   color: #f1f5f8;
   font-size: 1rem;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .btn:hover {
   background-color: white;
-  border: 1px solid #0c0e07;
   color: #0c0e07;
 }
 

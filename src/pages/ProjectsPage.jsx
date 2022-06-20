@@ -1,16 +1,21 @@
 import { FaGithubSquare } from 'react-icons/fa';
+import projects from '../data/projectsData';
+import { useState, useEffect } from 'react';
+import SingleProject from '../components/SingleProject';
 
 // importing css
 import './ProjectsPage.css';
 
 export default function ProjectsPage() {
   return (
-    <section>
+    <section className='project-section'>
       <h2 className='section-heading' data-aos='fade-down'>
         💾 Projects
       </h2>
 
-      <div className='projects-section'></div>
+      <div className='projects-section'>
+        <SingleProject />
+      </div>
     </section>
   );
 }
