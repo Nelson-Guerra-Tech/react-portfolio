@@ -22,7 +22,7 @@ export default function Contact() {
           <a href='https://www.linkedin.com/in/nelson-guerra-7075b413a/'>
             @Nelson-Guerra
           </a>
-          or by clicking the icon in the below.
+          or by clicking the icon below.
         </p>
       </div>
     </section>
