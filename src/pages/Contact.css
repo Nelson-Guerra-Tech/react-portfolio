@@ -1,0 +1,29 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 5rem 3rem;
+  max-width: 768px;
+}
+
+.contact-content p {
+  margin-top: 2rem;
+}
+
+.contact-content a {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #0097d7;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-content p {
+    font-size: 1rem;
+  }
+}
