@@ -18,7 +18,7 @@ export default function Contact() {
           </a>
         </p>
         <p>
-          🔎 You can also reach me on LinkedIn by clicking
+          🔎 You can also find me on LinkedIn by clicking
           <a href='https://www.linkedin.com/in/nelson-guerra-7075b413a/'>
             @Nelson-Guerra
           </a>
