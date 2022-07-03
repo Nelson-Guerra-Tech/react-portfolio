@@ -8,7 +8,7 @@ import { FaHome, FaCode, FaUser, FaEnvelope, FaMailBulk } from 'react-icons/fa';
 // import react links
 
 // import svg
-import myLogo from '../images/Asset 1.svg';
+import myLogo from '../img/Asset 1.svg';
 
 export default function Header() {
   return (
@@ -31,7 +31,7 @@ export default function Header() {
           <div className='icon'>
             <FaCode />
           </div>
-          <p className='home'>Projects</p>
+          <p className='home'>Portfolio</p>
         </Link>
 
         <Link to='/about' className='header-links'>

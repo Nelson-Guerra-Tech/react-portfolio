@@ -1,5 +1,5 @@
 /* imported fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500&display=swap');
 
 /* global colors */
 
@@ -7,7 +7,7 @@
   --poppins: 'Poppins', sans-serif;
   --smokey-black: #0c0e07;
   --corn-silk: #fefae0;
-  --accent: #0097d7;
+  --accent: #33a1fd;
   --off-white: #f1f5f8;
   --ghost-white: #fbfbfb;
   --blue-accent: #00b8ce;
@@ -24,7 +24,7 @@ html,
 body {
   font-family: 'Poppins', sans-serif;
   background: #f1f5f8;
-  height: 100%;
+  height: 100vh;
 }
 
 .home-container {
@@ -37,7 +37,7 @@ body {
 
 /* main container */
 .main-container {
-  max-width: 768px;
+  max-width: 1024px;
   /* background: white; */
   margin: auto;
   color: #0c0e07;
@@ -62,7 +62,7 @@ h1 {
 }
 
 .heading-name {
-  color: #0097d7;
+  color: #33a1fd;
 }
 
 .waving-hand {
@@ -116,7 +116,7 @@ h1 {
   text-align: center;
   font-size: 1.2rem;
   max-width: 40rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #0c0e07b6;
 }
 
@@ -129,13 +129,24 @@ img {
   margin: 0rem 0.5rem;
 }
 
-.btn {
-  cursor: pointer;
+.btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
-  padding: 10px 20px;
+}
+
+.btn__container a {
+  text-decoration: none;
+}
+
+.btn {
+  margin: 0rem 1rem;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
   border-radius: 10px;
   border: none;
-  background-color: #0097d7;
+  background-color: #33a1fd;
   color: #f1f5f8;
   font-size: 1rem;
   transition: all 0.2s ease-in-out;
@@ -143,12 +154,30 @@ img {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.btn:hover {
-  background-color: white;
-  color: #0c0e07;
+.btn:active {
+  transform: translateY(2px);
 }
 
-.btn:active {
+.btn_1 {
+  margin: 0rem 1rem;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  color: #0c0e07;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.btn_1:hover {
+  background-color: #33a1fd;
+  color: white;
+}
+
+.btn_1:active {
   transform: translateY(2px);
 }
 
@@ -162,8 +191,14 @@ img {
     font-size: 0.9rem;
   }
 
-  .btn {
-    font-size: 1rem;
+  .btn__container {
+    margin-top: 1rem;
+  }
+
+  .btn,
+  .btn_1 {
+    font-size: 0.9rem;
+    margin: 0.5rem;
   }
 
   .waving-hand {
@@ -182,6 +217,6 @@ img {
   }
 
   .main-container p {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
   }
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './SingleProject.css';
 import projects from '../data/projectsData';
+import styled from 'styled-components';
 
 export default function SingleProject() {
   // setting useState for the projects array
@@ -15,6 +16,9 @@ export default function SingleProject() {
             key={singleProject.id}
             data-aos='fade-up'
           >
+            <ImgContainer>
+              <img src={singleProject.img} alt='project-img' />
+            </ImgContainer>
             <h2>
               <a className='title' href={singleProject.liveUrl}>
                 {singleProject.title}
@@ -37,3 +41,19 @@ export default function SingleProject() {
     </div>
   );
 }
+
+const ImgContainer = styled.div`
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+  > img {
+    width: 100%;
+    border-radius: 10px;
+  }
+`;

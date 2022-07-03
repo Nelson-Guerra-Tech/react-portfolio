@@ -1,25 +1,36 @@
-.contact-section {
+.contact-info-container {
+  margin-top: 2rem 1rem;
+  max-width: 768px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.contact-content {
-  font-size: 1.2rem;
-  text-align: center;
-  margin: 8rem 3rem;
-  max-width: 768px;
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.contact-content p {
-  margin-top: 2rem;
+.contact-content {
+  font-size: 1.2rem;
+  /* text-align: center; */
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .contact-content a {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   color: #0097d7;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {

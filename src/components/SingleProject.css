@@ -1,7 +1,7 @@
 .single-project {
   max-width: 768px;
   margin-top: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 13rem;
 }
 
 .single-project h2 {
@@ -12,8 +12,27 @@
 }
 
 .project-icon {
-  color: #61dbfb;
   font-size: 1.8rem;
+}
+
+.react {
+  color: #61dbfb;
+}
+
+.html {
+  color: #e56027;
+}
+
+.css {
+  color: #238bc2;
+}
+
+.javascript {
+  color: #ead41c;
+}
+
+.node {
+  color: #89bb3c;
 }
 
 .firebase {
@@ -24,14 +43,18 @@
   color: #25c7c7;
 }
 
+.htmlIcon {
+  color: orange;
+}
+
 .title {
   text-decoration: none;
-  color: #0097d7;
+  color: #33a1fd;
 }
 
 .single-project-content {
   margin: 1rem 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   max-width: 768px;
   border-radius: 10px;
   background-color: white;
@@ -45,23 +68,35 @@
   flex-wrap: wrap;
 }
 
-.live-button,
 .github-button {
   margin-top: 0.5rem;
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 10px;
   border: none;
-  background-color: #0097d7;
+  background-color: #33a1fd;
+  border: 1px solid #33a1fd;
+
   color: #f1f5f8;
   font-size: 1rem;
   transition: all 0.2s ease-in-out;
 }
 
-.live-button:hover,
-.github-button:hover {
+.live-button {
+  margin-top: 0.5rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
   background-color: #f1f5f8;
   color: #0c0e07;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.live-button:hover {
+  border: 1px solid #33a1fd;
+  background-color: #33a1fd;
+  color: #f1f5f8;
 }
 
 .live-button:active,

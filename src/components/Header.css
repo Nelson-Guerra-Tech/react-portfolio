@@ -4,12 +4,8 @@
   align-items: center;
   background: transparent;
   height: 4rem;
-  max-width: 865px;
+  max-width: 1024px;
   margin: auto;
-}
-
-.header-div {
-  border-bottom: 2px solid #0c0e0756;
 }
 
 .myLogo {
@@ -24,18 +20,22 @@
 
 .header-links {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 400;
   padding: 0 1rem 0rem 0rem;
   text-decoration: none;
-  color: #0c0e07b4;
+  color: #0c0e07;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  letter-spacing: 2px;
   vertical-align: middle;
 }
 
 .header-links:hover,
 .icon:hover {
+  color: #0097d7;
+}
+
+.header-links:focus,
+.icon:focus {
   color: #0097d7;
 }
 
@@ -46,10 +46,7 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   vertical-align: middle;
-}
-
-.home:hover {
-  color: #0097d7;
+  display: none;
 }
 
 /* media queries */
@@ -61,6 +58,7 @@
   .icon {
     margin-right: 1rem;
     font-size: 1.5rem;
+    display: block;
   }
 
   .myLogo {
@@ -75,7 +73,7 @@
   }
 
   .icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
   }
 

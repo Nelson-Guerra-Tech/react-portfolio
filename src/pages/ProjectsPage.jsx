@@ -10,7 +10,7 @@ export default function ProjectsPage() {
   return (
     <section className='project-section'>
       <h2 className='section-heading' data-aos='fade-down'>
-        💾 Projects
+        💾 Portfolio
       </h2>
 
       <div className='projects-section'>

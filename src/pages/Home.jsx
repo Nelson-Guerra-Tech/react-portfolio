@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // importing svgs
-import wavingHand from '../images/waving-hand.png';
-import globe from '../images/globe.png';
+import wavingHand from '../img/waving-hand.png';
+import globe from '../img/globe.png';
 
 export default function Home() {
   return (
@@ -20,15 +20,20 @@ export default function Home() {
           </h1>
           <div className='title-info' data-aos='zoom-in' data-aos-delay='500'>
             <p>
-              A <span className='heading-name'>Software Developer </span>with a
-              Bachelors in Information Technology, based out of Georgia
+              A <span className='heading-name'>Software Developer </span> based
+              out of Georgia
               <img className='globe' src={globe} alt='globe'></img>
-              <span className='heading-name'>I design & develop</span> cool
-              things for the web
+              <br />I design & develop cool things for the web
             </p>
-            <Link to={'/projects'}>
-              <button className='btn'>View Projects</button>
-            </Link>
+
+            <div className='btn__container'>
+              <a className='btn_1' href='' download>
+                Download CV
+              </a>
+              <Link to={'/projects'}>
+                <a className='btn'>Portfolio</a>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
