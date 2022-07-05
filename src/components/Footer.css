@@ -82,13 +82,17 @@
 
 /* media queries */
 @media screen and (max-width: 600px) {
+  .footer-container {
+    height: 6rem;
+  }
+
   .footer__inner {
     justify-content: center;
   }
 
   .fa-icon {
-    font-size: 1.5rem;
-    margin-top: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1.7rem;
   }
   .footer-content {
     margin: 0rem;

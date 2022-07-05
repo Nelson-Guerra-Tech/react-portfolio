@@ -27,7 +27,7 @@ export default function Home() {
             </p>
 
             <div className='btn__container'>
-              <a className='btn_1' href='' download>
+              <a className='btn_1' href='../img/Resume.pdf' download>
                 Download CV
               </a>
               <Link to={'/projects'}>
