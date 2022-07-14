@@ -17,6 +17,24 @@ export default function ContactInfo() {
           or by clicking the icon below.
         </p>
       </div>
+
+      <div>
+        <form
+          action='https://getform.io/f/70f926b2-9884-46bc-a1a9-f1e7b4916c64'
+          method='POST'
+        >
+          <div c>
+            <p>
+              Submit the form below or shoot me an email -
+              nelsonguerra.tech@gmail.com
+            </p>
+          </div>
+          <input />
+          <input />
+          <textarea></textarea>
+          <button>Send Message</button>
+        </form>
+      </div>
     </ContactContainer>
   );
 }
