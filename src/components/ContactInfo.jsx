@@ -6,34 +6,25 @@ export default function ContactInfo() {
     <ContactContainer>
       <div className='contact-content' data-aos='fade-up'>
         <p>
-          🤝 If you want to get in contact with me, send me an email by clicking
-          <a href='mailto:nelsonguerra.tech@outlook.com'>nelsonguerra.tech</a>
+          🤝 If you want to get in contact with me, send me an email at
+          <span> nelsonguerra.tech@outlook.com</span>
         </p>
-        <p>
-          🔎 You can also find me on LinkedIn by clicking
-          <a href='https://www.linkedin.com/in/nelson-guerra-7075b413a/'>
-            @Nelson-Guerra
-          </a>
-          or by clicking the icon below.
-        </p>
-      </div>
 
-      <div>
-        <form
-          action='https://getform.io/f/70f926b2-9884-46bc-a1a9-f1e7b4916c64'
-          method='POST'
-        >
-          <div c>
-            <p>
-              Submit the form below or shoot me an email -
-              nelsonguerra.tech@gmail.com
-            </p>
-          </div>
-          <input />
-          <input />
-          <textarea></textarea>
-          <button>Send Message</button>
-        </form>
+        <FormContainer>
+          <form
+            action='https://getform.io/f/70f926b2-9884-46bc-a1a9-f1e7b4916c64'
+            method='POST'
+          >
+            <input type='text' name='name' placeholder='Name' required />
+            <input type='email' name='email' placeholder='Email' required />
+            <textarea
+              name='message'
+              placeholder='Type your message...'
+              required
+            ></textarea>
+            <button className='btn'>Send Message</button>
+          </form>
+        </FormContainer>
       </div>
     </ContactContainer>
   );
@@ -41,4 +32,33 @@ export default function ContactInfo() {
 
 const ContactContainer = styled.div`
   margin: 2rem 1rem;
+`;
+
+const FormContainer = styled.div`
+  display: flex;
+
+  > form {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  > form > input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 8px;
+    border: 1px solid;
+  }
+
+  > form > textarea {
+    width: 100%;
+    height: 8rem;
+    border-radius: 8px;
+    resize: none;
+  }
+
+  > form > button {
+    width: 100%;
+    margin: 0;
+  }
 `;
