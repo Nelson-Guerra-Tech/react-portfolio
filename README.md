@@ -5,7 +5,7 @@
 
   <p align="center">
     This is my personal portfolio but it is a clean verison, and a one page application, buit with React. Site URL / Demo: 
-    <a href="https://react-wordle-updated-clone.netlify.app/">https://react-wordle-updated-clone.netlify.app/</a>
+    <a href="https://nelson-guerra.tech/">https://nelson-guerra.tech//</a>
     <br />
     <br />
     <a href="https://nelson-guerra.tech">About Me</a>
