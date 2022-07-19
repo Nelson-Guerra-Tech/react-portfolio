@@ -48,7 +48,7 @@
 }
 
 .fa-icon:hover {
-  color: #33a1fd;
+  color: #0097d7;
 }
 
 .heart-icon {
@@ -61,7 +61,7 @@
 }
 
 .rotate {
-  animation: spin 4s infinite linear;
+  animation: spin 9s infinite linear;
 }
 
 @keyframes spin {

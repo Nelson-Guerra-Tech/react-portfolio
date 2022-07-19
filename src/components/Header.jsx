@@ -34,12 +34,12 @@ export default function Header() {
           <p className='home'>Portfolio</p>
         </Link>
 
-        <Link to='/about' className='header-links'>
+        {/* <Link to='/about' className='header-links'>
           <div className='icon'>
             <FaUser />
           </div>
           <p className='home'>About</p>
-        </Link>
+        </Link> */}
 
         <Link to='/contact' className='header-links'>
           <div className='icon'>

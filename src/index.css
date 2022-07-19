@@ -141,6 +141,11 @@ img {
   text-decoration: none;
 }
 
+.download-icon {
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
 .btn {
   margin: 0rem 1rem;
   cursor: pointer;
@@ -183,7 +188,7 @@ img {
 }
 
 /* media queries */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 3rem;
   }
@@ -218,6 +223,6 @@ img {
   }
 
   .main-container p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }

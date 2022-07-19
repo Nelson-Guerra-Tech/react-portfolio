@@ -31,9 +31,9 @@ export default function Footer() {
             <a href='https://codepen.io/your-work/' target='_blank'>
               <FaCodepen className='linked-icon fa-icon' />
             </a>
-            <a href='https://www.instagram.com/bearded_nelly/' target='_blank'>
+            {/* <a href='https://www.instagram.com/bearded_nelly/' target='_blank'>
               <FaInstagramSquare className='linked-icon fa-icon' />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

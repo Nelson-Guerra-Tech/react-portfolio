@@ -6,7 +6,7 @@ export default function ContactInfo() {
     <ContactContainer>
       <div className='contact-content' data-aos='fade-up'>
         <p>
-          🤝 If you want to get in contact with me, send me an email at
+          🤝 Send me an email at
           <span> nelsonguerra.tech@outlook.com</span>
         </p>
 
@@ -48,6 +48,7 @@ const FormContainer = styled.div`
     height: 2.5rem;
     border-radius: 8px;
     border: 1px solid;
+    padding: 0.5rem;
   }
 
   > form > textarea {
@@ -55,6 +56,7 @@ const FormContainer = styled.div`
     height: 8rem;
     border-radius: 8px;
     resize: none;
+    padding: 0.5rem;
   }
 
   > form > button {

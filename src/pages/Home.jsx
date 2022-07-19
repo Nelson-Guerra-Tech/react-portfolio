@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FiDownload } from 'react-icons/fi';
 
 // importing svgs
 import wavingHand from '../img/waving-hand.png';
@@ -23,15 +24,23 @@ export default function Home() {
               A <span className='heading-name'>Software Developer </span> based
               out of Georgia
               <img className='globe' src={globe} alt='globe'></img>
-              <br />I design & develop cool things for the web
+              <br />
+              Focused on {''}
+              <span className='heading-name'>designing & programming</span>{' '}
+              front-end applications
             </p>
 
             <div className='btn__container'>
-              <a className='btn_1' href='../img/Resume.pdf' download>
-                Download CV
+              <a
+                href='https://1drv.ms/b/s!ArPqeXXG-P85f8KkvguCJ7r_LZY'
+                target='_blank'
+              >
+                <button className='btn_1'>
+                  <FiDownload className='download-icon' /> Resúme
+                </button>
               </a>
               <Link to={'/projects'}>
-                <a className='btn'>Portfolio</a>
+                <button className='btn'>Portfolio</button>
               </Link>
             </div>
           </div>
